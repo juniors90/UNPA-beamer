@@ -1,0 +1,47 @@
+\documentclass[xetex, 11pt,spanish]{beamer}
+\usepackage[spanish]{babel}
+\usetheme{Madrid}
+
+\makeatletter
+\def\th@mystyle{%
+	\normalfont % body font
+	\setbeamercolor{block title example}{bg=orange,fg=white}
+	\setbeamercolor{block body example}{bg=orange!20,fg=black}
+	\def\inserttheoremblockenv{exampleblock}
+}
+\makeatother
+\theoremstyle{mystyle}
+\newtheorem*{remark}{Remark}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\begin{document}
+\author{Ferreira Juan David}
+	\title{Tests De Integración/Regresión}
+	\subtitle{}
+	\logo{}
+	\institute{}
+	\date{}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+		\maketitle
+	\end{frame}
+	\begin{frame}
+		\frametitle{Tests de Integración/Regresión}
+		Las pruebas de integración dentro del software testing chequean la integración o interfaces entre componentes, interacciones con diferentes partes del sistema, como un sistema operativo, sistema de archivos y hardware o interfaces entre sistemas. Las pruebas de integración son un aspecto clave del software testing.
+		
+		Es esencial que un probador de software tenga una buena comprensión de los enfoques de prueba de integración, para lograr altos estándares de calidad y buenos resultados. 
+	\end{frame}
+
+	\input{frames/integracion/Intro.tex}
+	\input{frames/integracion/BigBang.tex}
+	\input{frames/integracion/Descendente.tex}
+	\input{frames/integracion/Ascendente.tex}
+	\input{frames/integracion/Incremental.tex}
+
+	\input{frames/regresion/Intro.tex}
+	\input{frames/regresion/pasos.tex}
+\end{document}

@@ -1,0 +1,114 @@
+\begin{frame}
+    \frametitle{Tests de Regresión}
+    A continuación, listamos 6 aspectos a tener en cuenta:
+    
+    \begin{enumerate}
+        \item Planificación previa,
+        \item Uso de técnicas de diseño de casos de prueba, 
+        \item Clasificación adecuada mediante suites, 
+        \item Programación de mantenimientos,
+        \item Definición del tipo de Regresión a realizar,
+        \item Automatización.
+    \end{enumerate}
+
+    \begin{block}{Planificación previa}
+        Desde el inicio de la estimación de casos de prueba, es aconsejable 
+        \textbf{asignar prioridades} de ejecución: Alta, Media, Baja y palabras
+        clave como Regresión, Sanidad, etcétera para los casos de prueba.
+        De esta manera se puede hacer un filtro rápido por prioridades y etiquetas,
+        que permitan diferenciar rápidamente cuáles deberían ser los casos más
+        importantes.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tests de Regresión}
+    \begin{block}{Uso de técnicas de diseño de casos de prueba}
+        Reconocidas entidades internacionales\footnote{International
+        Software Testing Qualifications Boardy American Society for
+        Quality}, mencionan varias técnicas para la creación de casos
+        de prueba que permiten una mejora, de tal manera que al
+        aplicarlas se obtienen menos casos de prueba y un mayor
+        factor de \textbf{coverage} o bien una base de creación empírica.
+
+        Al tener un menor número de casos de prueba, se reducen las 
+        pruebas exhaustivas y tiempos de ejecución.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tests de Regresión}
+    \begin{block}{Clasificación adecuada mediante suites}
+        La división de \textbf{casos de prueba} según los módulos
+        de un sistema, facilitará la selección de casos al momento
+        de construir un \textbf{Plan de Pruebas} para Regresión.
+        
+        En las carpetas o suites deberían evitarse nombres ambiguos o 
+        diferentes a lo definido en el requerimiento, o en los nombres 
+        que se muestran en el sistema.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tests de Regresión}
+    \begin{block}{Programación de mantenimientos}
+        Conforme nuestra aplicación crece o sufre cambios y mejoras, 
+        se hace más necesario dedicar tiempo a revisar si estos 
+        cambios afectan nuestros casos de pruebas actuales, invalidándolos o 
+        requiriendo actualización. Si sabemos que el cambio los afectará,
+        debemos incluir tareas de actualización.
+         
+        Si estamos bajo un modelo de un sistema antiguo con casos
+        que nunca han tenido mantenimiento, lo recomendable es incluir 
+        tareas periódicas para la revisión de todos los casos existentes.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tests de Regresión}
+    \begin{block}{Definición del tipo de Regresión a realizar}
+        No todas las pruebas de regresión implican una ejecución 
+        del $100\%$ de los casos de prueba (Full Regression).
+        
+        En muchos casos, los cambios realizados afectan componentes 
+        específicos por lo que la regresión podría centrarse en 
+        esos módulos y la verificación del resto del sistema podría 
+        realizarse con una prueba de humo.
+        
+        En estos casos es necesario un análisis de dependencias 
+        para tener certeza de que los cambios por aplicar efectivamente 
+        no afectan otras partes no contempladas en la regresión del 
+        componente.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tests de Regresión}
+    \begin{block}{Automatización}
+        Las pruebas de regresión suelen ser procesos largos y 
+        al incorporar \textbf{configuracionde para las pruebas de automatización}
+        se consiguen varias ventajas.
+
+        \begin{itemize}
+            \item La capacidad de ejecución aumenta, al 
+            tiempo que la duración de las pruebas se reduce.
+            
+            \item Los scripts pueden ejecutarse tantas veces como se 
+            requiera sin que esto implique desgaste en el equipo.
+            
+            \item Se pueden incorporar diferentes entornos en
+            la prueba sin que esto aumente el tiempo de las mismas, 
+            pues pueden ejecutarse en paralelo.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bibliografía}
+   
+    %Algunos libros que recomiendo: 
+    \nocite{wong1997study, yoo2012regression, leung1990study, leung1989insights}
+   
+    \bibliographystyle{plain}
+    \bibliography{biblio}
+  \end{frame}
